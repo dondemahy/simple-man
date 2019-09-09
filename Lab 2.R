@@ -36,4 +36,13 @@ animal.choice <- function(x){
   else
     "birb"
 }
-
+load("~/Lab 2/fish_data.Rdata")
+nrow(fish)
+ncol(fish)
+class(fish$year)
+str(fish)
+#There are five different types of data types found in this list: numeric, character, factor, integer, and POSIXct 
+#The first four data types are fairly self explanatory. POSIXct is a numeric vector specifically used for timestamps.
+area <- as.character(fish$area_fac)
+class(area)
+fish$avg.DNE.m <- NULL
